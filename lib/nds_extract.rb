@@ -19,7 +19,7 @@ def directors_totals(nds)
     result[nds[row][:name]] = total_for_each_director
     
     row += 1  
-    total_for_each_director = 0
+    # total_for_each_director = 0
   end
   result
 end
