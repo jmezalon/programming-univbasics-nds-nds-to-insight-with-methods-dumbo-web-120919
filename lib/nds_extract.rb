@@ -20,7 +20,7 @@ def directors_totals(nds)
     total_for_each_director = 0
     row += 1  
   end
-  puts result
+  result
 end
 
 
