@@ -16,7 +16,7 @@ def directors_totals(nds)
       total_for_each_director += nds[row][:movies][column][:worldwide_gross]
       column += 1
     end 
-    result[nds[:name]] = total_for_each_director
+    result[nds[row][:name]] = total_for_each_director
     total_for_each_director = 0
     row += 1  
   end
