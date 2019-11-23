@@ -8,7 +8,13 @@ require 'directors_database'
 def directors_totals(nds)
   result = {}
   nil
-  puts nds.class
+  row = 0 
+  total_for_each_director = 0
+  while row < nds[:movies].length do
+    total_for_each_director += nds[:movies][row][:worldwide_gross]
+    row += 1  
+  end
+  pp result[nds[:name]] = total_for_each_director
 end
 
 
