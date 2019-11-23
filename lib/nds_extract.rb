@@ -19,8 +19,9 @@ def directors_totals(nds)
       column += 1
     end 
     row += 1  
+    result[nds[row][:name]] = total_for_each_director
   end
-  result[nds[row][:name]] = total_for_each_director
+  
   result
 end
 
