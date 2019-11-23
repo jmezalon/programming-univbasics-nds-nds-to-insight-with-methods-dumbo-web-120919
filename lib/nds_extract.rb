@@ -8,7 +8,7 @@ require 'directors_database'
 def directors_totals(nds)
   result = {}
   nil
-  p nds.class
+  puts nds.class
 end
 
 
