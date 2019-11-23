@@ -13,7 +13,7 @@ def directors_totals(nds)
   while row < nds[:movies].length do
     total_for_one_director = 0
     column = 0 
-    while column < nds[row][:movies].length do
+    while column < nds[:movies][row].length do
       one_director = nds[row][:movies][column][:worldwide_gross]
       puts one_director
       total_for_one_director += one_director
