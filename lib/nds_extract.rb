@@ -10,12 +10,17 @@ def directors_totals(nds)
   nil
   row = 0 
   total_for_each_director = 0
-  while row < nds[:movies].length do
-    # total_for_each_director += nds[:movies][row][:worldwide_gross]
-    puts nds[:movies][row][:worldwide_gross]
+  while row < nds.length do
+    column = 0 
+    while column < nds[row][:movies][column].length do
+      total_for_each_director += nds[row][:movies][column][:worldwide_gross]
+      column += 1
+    end 
+    result[nds[:name]] = total_for_each_director
+    total_for_each_director = 0
     row += 1  
   end
-  puts result[nds[:name]] = total_for_each_director
+  puts result
 end
 
 
